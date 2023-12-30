@@ -5,8 +5,10 @@
 1. Update config.yaml
 2. Update params.yaml
 
-### Done for Data ingestion, data validation, data transformation,
-### model trainer and model evaluation. 
+```bash
+The steps below have to be followed for Data ingestion, data validation, data transformation, model trainer and model evaluation. 
+```
+
 3. Update entity ( updating __init__.py in entity folder inside src/TextSummarization for each of DataIngestion, DataValidation, DataTransformation, ModelTrainer and ModelEvaluation )
 
 4. Update the configuration manager (in configuration.py) in src config folder
@@ -53,7 +55,8 @@
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/text-s
+
+    Save the URI: (this is Random, user have to generate it) 566373416292.dkr.ecr.us-east-1.amazonaws.com/text-s
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
