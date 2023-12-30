@@ -174,3 +174,7 @@ Traceback (most recent call last):
   File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/torch/optim/adamw.py", line 125, in _init_group
     state["exp_avg_sq"] = torch.zeros_like(
 RuntimeError: MPS backend out of memory (MPS allocated: 8.15 GB, other allocations: 9.97 GB, max allowed: 18.13 GB). Tried to allocate 16.00 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+[2023-12-30 02:15:26,756: INFO: server: Started server process [14436]]
+[2023-12-30 02:15:26,756: INFO: on: Waiting for application startup.]
+[2023-12-30 02:15:26,756: INFO: on: Application startup complete.]
+[2023-12-30 02:15:26,756: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
