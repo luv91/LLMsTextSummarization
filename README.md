@@ -16,6 +16,8 @@
 6. Update the pipeline in the (01_data_ingestion.ipynb, later in data_ingestion.py). 
     * Similarly done for all components of the pipeline
 
-7. Update the main.py
+7. Update the main.py (if running from discvoery cluster, then export: export PYTHONPATH="${PYTHONPATH}:/home/verma.lu/LLMsTextSummarization/src"
+)
+
 8. Update the app.py
 
