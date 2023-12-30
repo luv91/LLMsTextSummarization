@@ -67,3 +67,110 @@ Source-Age: 0
 [2023-12-29 20:00:20,095: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2023-12-30 00:13:06,583: INFO: config: PyTorch version 2.1.2 available.]
+[2023-12-30 00:13:07,568: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-30 00:13:07,570: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-30 00:13:07,571: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-30 00:13:07,571: INFO: common: created directory at: artifacts]
+[2023-12-30 00:13:07,571: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-30 00:13:07,572: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-12-30 00:13:07,680: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-30 00:13:07,681: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-12-30 00:13:07,683: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-30 00:13:07,684: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-30 00:13:07,684: INFO: common: created directory at: artifacts]
+[2023-12-30 00:13:07,684: INFO: common: created directory at: artifacts/data_validation]
+[2023-12-30 00:13:07,685: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-12-30 00:13:07,685: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-12-30 00:13:07,687: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-30 00:13:07,688: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-30 00:13:07,688: INFO: common: created directory at: artifacts]
+[2023-12-30 00:13:07,688: INFO: common: created directory at: artifacts/data_transformation]
+[2023-12-30 00:13:10,443: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-12-30 00:13:10,443: INFO: main: *******************]
+[2023-12-30 00:13:10,443: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-12-30 00:13:10,445: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-30 00:13:10,446: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-30 00:13:10,446: INFO: common: created directory at: artifacts]
+[2023-12-30 00:13:10,446: INFO: common: created directory at: artifacts/model_trainer]
+[2023-12-30 00:14:25,346: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`]
+Traceback (most recent call last):
+  File "/Users/luv/Documents/LLMs/LLMsTextSummarization/main.py", line 47, in <module>
+    model_trainer.main()
+  File "/Users/luv/Documents/LLMs/LLMsTextSummarization/src/TextSummarization/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/luv/Documents/LLMs/LLMsTextSummarization/src/TextSummarization/components/model_trainer.py", line 32, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 121, in __init__
+  File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/transformers/training_args.py", line 1493, in __post_init__
+    and (self.device.type != "cuda")
+  File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/transformers/training_args.py", line 1941, in device
+    return self._setup_devices
+  File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/transformers/utils/generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/transformers/training_args.py", line 1841, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+[2023-12-30 00:14:58,713: INFO: config: PyTorch version 2.1.2 available.]
+[2023-12-30 00:14:59,483: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-30 00:14:59,486: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-30 00:14:59,487: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-30 00:14:59,487: INFO: common: created directory at: artifacts]
+[2023-12-30 00:14:59,487: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-30 00:14:59,487: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-12-30 00:14:59,597: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-30 00:14:59,597: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-12-30 00:14:59,600: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-30 00:14:59,600: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-30 00:14:59,601: INFO: common: created directory at: artifacts]
+[2023-12-30 00:14:59,601: INFO: common: created directory at: artifacts/data_validation]
+[2023-12-30 00:14:59,602: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-12-30 00:14:59,602: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-12-30 00:14:59,604: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-30 00:14:59,605: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-30 00:14:59,605: INFO: common: created directory at: artifacts]
+[2023-12-30 00:14:59,605: INFO: common: created directory at: artifacts/data_transformation]
+[2023-12-30 00:15:00,403: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-12-30 00:15:00,404: INFO: main: *******************]
+[2023-12-30 00:15:00,404: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-12-30 00:15:00,406: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-30 00:15:00,407: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-30 00:15:00,407: INFO: common: created directory at: artifacts]
+[2023-12-30 00:15:00,407: INFO: common: created directory at: artifacts/model_trainer]
+[2023-12-30 00:16:59,122: ERROR: main: MPS backend out of memory (MPS allocated: 8.15 GB, other allocations: 9.97 GB, max allowed: 18.13 GB). Tried to allocate 16.00 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).]
+Traceback (most recent call last):
+  File "/Users/luv/Documents/LLMs/LLMsTextSummarization/main.py", line 47, in <module>
+    model_trainer.main()
+  File "/Users/luv/Documents/LLMs/LLMsTextSummarization/src/TextSummarization/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/luv/Documents/LLMs/LLMsTextSummarization/src/TextSummarization/components/model_trainer.py", line 45, in train
+    trainer.train()
+  File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/transformers/trainer.py", line 1537, in train
+    return inner_training_loop(
+  File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/transformers/trainer.py", line 1902, in _inner_training_loop
+    self.optimizer.step()
+  File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/accelerate/optimizer.py", line 145, in step
+    self.optimizer.step(closure)
+  File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/torch/optim/lr_scheduler.py", line 68, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/torch/optim/optimizer.py", line 373, in wrapper
+    out = func(*args, **kwargs)
+  File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/torch/optim/optimizer.py", line 76, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/torch/optim/adamw.py", line 173, in step
+    self._init_group(
+  File "/Users/luv/miniconda3/envs/LLMTextSummarization_env/lib/python3.9/site-packages/torch/optim/adamw.py", line 125, in _init_group
+    state["exp_avg_sq"] = torch.zeros_like(
+RuntimeError: MPS backend out of memory (MPS allocated: 8.15 GB, other allocations: 9.97 GB, max allowed: 18.13 GB). Tried to allocate 16.00 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
