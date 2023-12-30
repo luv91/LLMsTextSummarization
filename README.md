@@ -7,6 +7,7 @@
 3. Update entity
 4. Update the configuration manager (configuration.py) in src config folder
 5. Update the components
-6. Update the pipeline
+6. Update the pipeline in the 01_data_ingestion.ipynb
 7. Update the main.py
 8. Update the app.py
+
